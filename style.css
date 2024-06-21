@@ -14,6 +14,18 @@ header {
   border-bottom: 4px solid #B8E67D;
 }
 
+footer {
+  background-color: #E6CF15; 
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 4px solid #B8E67D;
+}
+footer a {
+  color: white;
+  text-decoration: underline #B8E67D;
+}
+
 main {
   padding: 2em;
 }
