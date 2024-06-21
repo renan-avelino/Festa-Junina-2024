@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFF9C4; 
+}
+
+header {
+  background-color: #E6CF15; 
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 4px solid #B8E67D;
+}
+
+main {
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.comidas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.comida {
+  background-color: #E3E630; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  width: calc(20% - 1em);
+  margin: 0.5em;
+  transition: transform 0.2s;
+}
+
+.comida:hover {
+  transform: scale(1.05);
+}
+
+.comida img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 4px solid #4BE630; 
+}
+
+.comida h3 {
+  margin: 0;
+  padding: 1em;
+  background-color: #97E630; 
+  color: white;
+  font-size: 1.2em;
+}
+
+@media (max-width: 1024px) {
+  .comida {
+      flex: 1 1 calc(33.333% - 1em);
+  }
+}
+
+@media (max-width: 768px) {
+  .comida {
+      flex: 1 1 calc(50% - 1em);
+  }
+}
+
+@media (max-width: 480px) {
+  .comida {
+      flex: 1 1 100%;
+  }
+}
